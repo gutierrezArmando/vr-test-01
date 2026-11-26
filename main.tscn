@@ -13,6 +13,9 @@ sky_material = SubResource("ProceduralSkyMaterial_0xm2m")
 background_mode = 2
 sky = SubResource("Sky_h2yge")
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_phnfy"]
+albedo_color = Color(1, 1, 0.24705882, 1)
+
 [sub_resource type="SphereMesh" id="SphereMesh_68p68"]
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_68p68"]
@@ -31,6 +34,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.8444257, 0)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D" unique_id=1304125725]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.42731977, 0)
+material_override = SubResource("StandardMaterial3D_phnfy")
 mesh = SubResource("SphereMesh_68p68")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D" unique_id=890346078]
