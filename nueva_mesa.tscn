@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://dn1lfew23yuim"]
+
+[ext_resource type="PackedScene" uid="uid://b0m5w6bdbyn3i" path="res://nueva_mesa.glb" id="1_6ean6"]
+[ext_resource type="Texture2D" uid="uid://wuc33p7fs4bg" path="res://Mesa_BaseColor.png" id="2_vaav2"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0xm2m"]
+albedo_texture = ExtResource("2_vaav2")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_h2yge"]
+albedo_texture = ExtResource("2_vaav2")
+
+[node name="nueva_mesa" unique_id=521995391 instance=ExtResource("1_6ean6")]
+
+[node name="mesa" parent="." index="0" unique_id=1654702293]
+material_override = SubResource("StandardMaterial3D_0xm2m")
+
+[node name="patas" parent="mesa" index="0" unique_id=567994397]
+material_override = SubResource("StandardMaterial3D_h2yge")

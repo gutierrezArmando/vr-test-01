@@ -1,3 +1,9 @@
 # Godot 4+ specific ignores
 .godot/
 /android/
+
+# Archivos de respaldo de Blender y pesados de Substance
+*.blend1
+*.blend2
+*.spp
+*.sbsar
