@@ -14,7 +14,7 @@ background_mode = 2
 sky = SubResource("Sky_h2yge")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xqxpj"]
-albedo_color = Color(0, 0, 1, 1)
+albedo_color = Color(0.16470589, 0.6431373, 0.2901961, 1)
 
 [sub_resource type="SphereMesh" id="SphereMesh_68p68"]
 material = SubResource("StandardMaterial3D_xqxpj")
