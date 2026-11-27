@@ -1,0 +1,50 @@
+name: Validar asignado y mover Issue a In Progress
+
+on:
+  create:
+
+jobs:
+  validate-and-move:
+    if: github.event.ref_type == 'branch'
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ secrets.PROJECT_TOKEN }}
+      PROJECT_OWNER: gutierrezArmando
+      PROJECT_NUMBER: 1
+    steps:
+      - name: Verificar asignado y mover tarjeta a In Progress
+        run: |
+          BRANCH_NAME="${{ github.event.ref }}"
+          CREATOR="${{ github.actor }}"
+          ISSUE_NUM=$(echo "$BRANCH_NAME" | grep -oE '^[0-9]+')
+
+          if [ -z "$ISSUE_NUM" ]; then
+            echo "La rama '$BRANCH_NAME' no inicia con número de Issue."
+            exit 0
+          fi
+
+          # Obtener usuarios asignados al Issue
+          ASSIGNEES=$(gh issue view "$ISSUE_NUM" --repo "${{ github.repository }}" --json assignees --jq '.assignees[].login')
+
+          # Validar que sea el dueño o uno de los asignados
+          if [ "$CREATOR" != "$PROJECT_OWNER" ] && ! echo "$ASSIGNEES" | grep -qx "$CREATOR"; then
+            echo "El usuario @$CREATOR no está asignado al Issue #$ISSUE_NUM."
+            gh issue comment "$ISSUE_NUM" --repo "${{ github.repository }}" --body "⚠️ @$CREATOR intentó tomar este ticket creando la rama \`$BRANCH_NAME\`, pero está asignado únicamente a: $(echo $ASSIGNEES | sed 's/ /, @/g; s/^/@/')."
+            exit 1
+          fi
+
+          # Mover tarjeta a In Progress
+          ISSUE_URL="https://github.com/${{ github.repository }}/issues/$ISSUE_NUM"
+          PROJECT_DATA=$(gh project view $PROJECT_NUMBER --owner $PROJECT_OWNER --format json)
+          PROJECT_ID=$(echo "$PROJECT_DATA" | jq -r '.id')
+
+          FIELDS_JSON=$(gh project field-list $PROJECT_NUMBER --owner $PROJECT_OWNER --format json)
+          STATUS_FIELD_ID=$(echo "$FIELDS_JSON" | jq -r '.fields[] | select(.name=="Status") | .id')
+          IN_PROGRESS_ID=$(echo "$FIELDS_JSON" | jq -r '.fields[] | select(.name=="Status") | .options[] | select(.name=="In Progress") | .id')
+
+          ITEM_ID=$(gh project item-list $PROJECT_NUMBER --owner $PROJECT_OWNER --format json | jq -r --arg url "$ISSUE_URL" '.items[] | select(.content.url==$url) | .id')
+
+          if [ -n "$ITEM_ID" ]; then
+            gh project item-edit --project-id "$PROJECT_ID" --id "$ITEM_ID" --field-id "$STATUS_FIELD_ID" --single-select-option-id "$IN_PROGRESS_ID"
+            echo "Tarjeta #$ISSUE_NUM movida a In Progress por @$CREATOR."
+          fi
