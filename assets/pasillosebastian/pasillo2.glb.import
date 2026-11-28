@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://dlck5ajqmhmkp"
-path="res://.godot/imported/pasillo2.glb-60e7851fe4856b4feed26c93387798a7.scn"
+path="res://.godot/imported/pasillo2.glb-c17bac7da9477449033fcb5f863ea37d.scn"
 
 [deps]
 
-source_file="res://pasillo2.glb"
-dest_files=["res://.godot/imported/pasillo2.glb-60e7851fe4856b4feed26c93387798a7.scn"]
+source_file="res://assets/pasillosebastian/pasillo2.glb"
+dest_files=["res://.godot/imported/pasillo2.glb-c17bac7da9477449033fcb5f863ea37d.scn"]
 
 [params]
 

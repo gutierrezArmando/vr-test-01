@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://dsjwi4uykd7wl"
-path="res://.godot/imported/lobby.glb-f6f376e4a42a16611bb2655336e1e3e7.scn"
+path="res://.godot/imported/lobby.glb-179021871b97274039f951512cddca7f.scn"
 
 [deps]
 
-source_file="res://assets/LobbyDante&Marco/lobby.glb"
-dest_files=["res://.godot/imported/lobby.glb-f6f376e4a42a16611bb2655336e1e3e7.scn"]
+source_file="res://assets/lobby/lobby.glb"
+dest_files=["res://.godot/imported/lobby.glb-179021871b97274039f951512cddca7f.scn"]
 
 [params]
 

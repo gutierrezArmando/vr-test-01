@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cig4ald8nohta"
-path="res://.godot/imported/Material.001_occlusionRoughnessMetallic.png-51ca0facef900e53d08dd2fb88b9b563.ctex"
+path="res://.godot/imported/Material.001_occlusionRoughnessMetallic.png-4bf6ab1651fa51a7d06619c62a991df5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/salabobomb/salatexturas/Material.001_occlusionRoughnessMetallic.png"
-dest_files=["res://.godot/imported/Material.001_occlusionRoughnessMetallic.png-51ca0facef900e53d08dd2fb88b9b563.ctex"]
+source_file="res://assets/salabombomSebastian/salatexturas/Material.001_occlusionRoughnessMetallic.png"
+dest_files=["res://.godot/imported/Material.001_occlusionRoughnessMetallic.png-4bf6ab1651fa51a7d06619c62a991df5.ctex"]
 
 [params]
 

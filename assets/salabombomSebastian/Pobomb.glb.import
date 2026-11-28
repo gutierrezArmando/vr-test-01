@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://bcypxqd83akqb"
-path="res://.godot/imported/Pobomb.glb-facc99c6271512c0e8e03e6f3bc72664.scn"
+path="res://.godot/imported/Pobomb.glb-d98805931bfef3a7dd73c87de5c0ab2a.scn"
 
 [deps]
 
-source_file="res://assets/salabobomb/Pobomb.glb"
-dest_files=["res://.godot/imported/Pobomb.glb-facc99c6271512c0e8e03e6f3bc72664.scn"]
+source_file="res://assets/salabombomSebastian/Pobomb.glb"
+dest_files=["res://.godot/imported/Pobomb.glb-d98805931bfef3a7dd73c87de5c0ab2a.scn"]
 
 [params]
 

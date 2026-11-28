@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://carnf0vgsumsf"
-path="res://.godot/imported/LobbyDante&Marco_Metallic.png-b915d3db4525f2fdb0eb372c383d9204.ctex"
+path="res://.godot/imported/LobbyDante&Marco_Metallic.png-d8d70de2a915f3aa97f2ae3bcf28a763.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/LobbyDante&Marco/TexturasLobbyDante&Marco/LobbyDante&Marco_Metallic.png"
-dest_files=["res://.godot/imported/LobbyDante&Marco_Metallic.png-b915d3db4525f2fdb0eb372c383d9204.ctex"]
+source_file="res://assets/lobby/texturasLobby/LobbyDante&Marco_Metallic.png"
+dest_files=["res://.godot/imported/LobbyDante&Marco_Metallic.png-d8d70de2a915f3aa97f2ae3bcf28a763.ctex"]
 
 [params]
 
