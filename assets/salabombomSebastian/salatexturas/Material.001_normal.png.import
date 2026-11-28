@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://buqsvhsqbj7tf"
-path="res://.godot/imported/Material.001_normal.png-1b5dd45971badf151f812b99993a1b5d.ctex"
+path="res://.godot/imported/Material.001_normal.png-87244be520b35d366252e9a3d03843ba.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/salabobomb/salatexturas/Material.001_normal.png"
-dest_files=["res://.godot/imported/Material.001_normal.png-1b5dd45971badf151f812b99993a1b5d.ctex"]
+source_file="res://assets/salabombomSebastian/salatexturas/Material.001_normal.png"
+dest_files=["res://.godot/imported/Material.001_normal.png-87244be520b35d366252e9a3d03843ba.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bbsnw3il88b08"
-path="res://.godot/imported/LobbyDante&Marco_BaseColor.png-01adf8ed623b991d26f20e1cdf136007.ctex"
+path="res://.godot/imported/LobbyDante&Marco_BaseColor.png-d289642ee639d3c9ef04fe3af43fdc8a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/LobbyDante&Marco/TexturasLobbyDante&Marco/LobbyDante&Marco_BaseColor.png"
-dest_files=["res://.godot/imported/LobbyDante&Marco_BaseColor.png-01adf8ed623b991d26f20e1cdf136007.ctex"]
+source_file="res://assets/lobby/texturasLobby/LobbyDante&Marco_BaseColor.png"
+dest_files=["res://.godot/imported/LobbyDante&Marco_BaseColor.png-d289642ee639d3c9ef04fe3af43fdc8a.ctex"]
 
 [params]
 

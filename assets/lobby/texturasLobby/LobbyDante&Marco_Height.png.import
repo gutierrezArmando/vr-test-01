@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b0ohumj4jmptv"
-path="res://.godot/imported/LobbyDante&Marco_Height.png-8d05d9fb67d56e70497e5f5e8d1e6260.ctex"
+path="res://.godot/imported/LobbyDante&Marco_Height.png-cf380ac8e5a23f5fed15d2cefc8ceee2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/LobbyDante&Marco/TexturasLobbyDante&Marco/LobbyDante&Marco_Height.png"
-dest_files=["res://.godot/imported/LobbyDante&Marco_Height.png-8d05d9fb67d56e70497e5f5e8d1e6260.ctex"]
+source_file="res://assets/lobby/texturasLobby/LobbyDante&Marco_Height.png"
+dest_files=["res://.godot/imported/LobbyDante&Marco_Height.png-cf380ac8e5a23f5fed15d2cefc8ceee2.ctex"]
 
 [params]
 

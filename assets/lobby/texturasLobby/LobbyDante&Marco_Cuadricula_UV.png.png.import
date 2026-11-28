@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cykdglx5yvk13"
-path="res://.godot/imported/LobbyDante&Marco_Cuadricula_UV.png.png-dc3684f51621aa529623ae990cc98494.ctex"
+path="res://.godot/imported/LobbyDante&Marco_Cuadricula_UV.png.png-95fab7aabd5598e212d03a75f09b057d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/LobbyDante&Marco/TexturasLobbyDante&Marco/LobbyDante&Marco_Cuadricula_UV.png.png"
-dest_files=["res://.godot/imported/LobbyDante&Marco_Cuadricula_UV.png.png-dc3684f51621aa529623ae990cc98494.ctex"]
+source_file="res://assets/lobby/texturasLobby/LobbyDante&Marco_Cuadricula_UV.png.png"
+dest_files=["res://.godot/imported/LobbyDante&Marco_Cuadricula_UV.png.png-95fab7aabd5598e212d03a75f09b057d.ctex"]
 
 [params]
 
