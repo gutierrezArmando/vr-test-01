@@ -1,8 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://bf4j2c10so67t"]
-
-[ext_resource type="PackedScene" uid="uid://b2w2ix8u30w33" path="res://assets/acuariojuan/castilo_Mario.glb" id="1_him15"]
-
-[node name="Node3D" type="Node3D"]
-
-[node name="castilo_Mario" parent="." instance=ExtResource("1_him15")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.069877625, 0, 0.16380882)
